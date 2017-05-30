@@ -1,0 +1,186 @@
+﻿<div ng-controller="userAcnt" id="userAccount">
+
+    <div class="col-sm-2 paddingInherit section1">
+        <form>
+            <div class="nav-side-menu">
+                <div class="brand">
+                    <img src="../../Content/Imgaes/online-shop.png" />
+
+                    <div id="customerDetails">
+                        <div>
+                            <span class="fontSmaller"> Name - </span> <span> <b>{{userLoginDetails.CustomerName}}</b> </span>
+                        </div>
+                        <div>
+                            <span class="fontSmaller"> Account Number - </span> <span> <b>{{userLoginDetails.CustomerNumber}}</b> </span>
+                        </div>
+                        <div *ngIf="userLoginDetails.Email">
+                            <span class="fontSmaller"> Mail - </span><span><b>{{userLoginDetails.Email}} </b></span>
+                        </div>
+                        <div *ngIf="userLoginDetails.Phone1">
+                            <span class="fontSmaller"> Mobile - </span> <span><b>{{userLoginDetails.Phone1}} </b></span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+
+                    <ul id="menu-content" class="menu-content collapse out">
+
+
+                        <li (click)="showPayments()">
+                            <a href="#"><i class="fa fa-dashboard fa-lg"></i> PAYMENTS </a>
+                        </li>
+
+                        <li (click)="showTransactions()">
+
+                            <a href="#"><i class="fa fa-dashboard fa-lg"></i> TRANSACTIONS </a>
+                        </li>
+
+                        <li (click)="LogOut()">
+                            <a href="#"><i class="fa fa-dashboard fa-lg"></i>LOGOUT</a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-10 section2">
+
+
+        <div class="">
+            <div *ngIf="paymentsTab">
+                <h2>Payment Details</h2>
+                <div class="filters row col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!--<div class="col-sm-3">Document Number </div>-->
+                            <div class="col-sm-4">
+                                <div id="paymentRange" class="form-control col-sm-4" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;width:96%;">
+                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                    <span></span> <b class="caret"></b>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+
+                                <div class="input-group">
+                                    <span class="has-float-label">
+                                        <input class="form-control" id="appliedToDocTypeNumber" [(ngModel)]="appliedToDocTypeNumberFilter" placeholder="Doc Type Number" />
+                                        <label for="appliedToDocTypeNumber">Applied Doc type Number</label>
+                                    </span>
+                                </div>
+
+                                <!--<input type="text" [(ngModel)]="docTypeNumber" class="form-control" placeholder="Document Type Number" />-->
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-group">
+                                    <span class="has-float-label">
+                                        <input class="form-control" id="orgTrxAmount" [(ngModel)]="orgTrxAmountFilter" placeholder="Org Trx Amount" />
+                                        <label for="orgTrxAmount">Org Trx Amount</label>
+                                    </span>
+                                </div>
+
+                                <!--<input type="text" [(ngModel)]="orgTrxAmount" class="form-control" placeholder="Org Trx Amount" />-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="has-float-label">
+                                    <input class="form-control" id="rmDocType" [(ngModel)]="rmDocTypeFilter" placeholder="RMDoc Type" />
+                                    <label for="rmDocType">RMDoc Type</label>
+                                </span>
+                            </div>
+                            <!--<input type="text" [(ngModel)]="rmDocType" class="form-control" placeholder="RMDoc Type" />-->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="has-float-label">
+                                    <input class="form-control" id="amountApplied" [(ngModel)]="amountAppliedFilter" placeholder="Amount Applied" />
+                                    <label for="amountApplied">Amount Applied</label>
+                                </span>
+                            </div>
+                            <!--<input type="text" [(ngModel)]="amountApplied" class="form-control" placeholder="Amount Applied" />-->
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="has-float-label">
+                                    <input class="form-control" id="documentNumber" [(ngModel)]="appliedDocDateFilter" placeholder="Document Number" />
+                                    <label for="documentNumber">Document Number</label>
+                                </span>
+                            </div>
+                            <!--<input type="text" [(ngModel)]="documentNumber" class="form-control" placeholder="Document Number" />-->
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <input type="submit" value="View Report" (click)="viewCustomerPaymentReport()" class="btn" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <table id="paymentDetails" class="table table-hover width100important ui celled table table-striped"></table>
+                </div>
+            </div>
+
+            <div *ngIf="transactionTab">
+                <!--<div id="reportrange" class="pull-right" style="background: #fff;margin-top:10%;margin-bottom:5%; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                    <span></span> <b class="caret"></b>
+                </div>-->
+                <h2>Transaction Details</h2>
+                <br />
+                <div>
+                    <div id="transactionRange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 25%">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <table id="transactionDetails" class="table table-hover width100important ui celled table table-striped"></table>
+                </div>
+            </div>
+            <!--<div *ngIf="personalInfoTab">
+                <h2>Customer Details</h2>
+
+                <div class="row customerPanel">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="box">
+                            <div class="icon">
+                                <div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+                                <div class="info">
+                                    <ul>
+                                        <li>
+                                            Account Number : <span>{{userLoginDetails.AccountNumber}} </span>
+                                        </li>
+                                        <li>
+                                            Mail : <span>{{userLoginDetails.Email}} </span>
+                                        </li>
+                                        <li>
+                                            Mobile : <span>{{userLoginDetails.PhoneNumber}} </span>
+                                        </li>
+                                        <li>
+                                            ACtive From : <span>{{userLoginDetails.UserCreatedOnDate}} </span>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="space"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>

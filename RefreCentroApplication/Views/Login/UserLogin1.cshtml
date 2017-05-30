@@ -1,0 +1,55 @@
+﻿@model RefriCentroApplication.Business.Models.UserAccount
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (@Html.BeginForm())
+        {
+
+
+            @*<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>*@
+
+            <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>
+                <form>
+                    @Html.EditorFor(model => model.AccountNumber)
+                    @Html.PasswordFor(model => model.Password)
+                    @*<input type="text" name="user" placeholder="Username" value="@Model.AccountNumber">
+                        <input type="password" name="pass" placeholder="Password" value="@Model.Password">*@
+                    <input type="submit" value="Login" class="login loginmodal-submit" />
+                </form>
+
+            </div>
+            <p>
+                @Html.ValidationSummary();
+
+            </p>
+
+            @*<table border="1">new { @class = "control-label col
+                    <tr>
+                        <td>@Html.LabelFor(model=>model.AccountNumber)</td>
+                        <td>@Html.EditorFor(model=>model.AccountNumber)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(model=>model.Password)</td>
+                        <td>@Html.EditorFor(model=>model.Password)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Login"/>
+                        </td>
+                    </tr>
+                </table>*@
+        }
+    </div>
+</body>
+</html>
+

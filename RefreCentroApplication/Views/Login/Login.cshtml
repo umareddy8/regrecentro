@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Login";
+    bool isProdMode = Convert.ToBoolean(
+        System.Configuration.ConfigurationManager.AppSettings["ProdMode"]);
+}
+
+
+
+<link href="~/Content/CSS/login.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/scripts/bootstrap.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/scripts/sha1.js"></script>
+<script>
+    System.defaultJSExtensions = true;
+    if ('@isProdMode.ToString().ToLower()' == 'false') {
+        System.import('/src/Login/main').catch(function (err) {
+            console.error(err);
+        });
+    }
+</script>
+<my-app>Loading...</my-app>
+
+@if (isProdMode)
+{
+<script src = "~/dist/Login.min.js" ></script>
+}

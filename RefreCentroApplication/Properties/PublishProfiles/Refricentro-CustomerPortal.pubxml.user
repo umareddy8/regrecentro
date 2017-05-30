@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Refricentro-Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/26/2017 01:44:42</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>05/26/2017 01:44:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/RefreCentroApplication.dll">
+      <publishTime>05/30/2017 14:27:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/26/2017 03:09:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/26/2017 03:09:54</publishTime>
+    </File>
+    <File Include="Content/CSS/dataTables.semanticui.min.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/CSS/daterangepicker.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/CSS/jquery.dataTables.min.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/CSS/login.css">
+      <publishTime>05/26/2017 04:21:52</publishTime>
+    </File>
+    <File Include="Content/CSS/ng-table.min.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/CSS/semantic.min.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/CSS/sideNavBar.css">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/1365982315_First-Co-Logo.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/2000px-Honeywell_logo.svg.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/back.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/blueprint.87f886510d2c.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/bohn.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/Embraco logo.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/erico-80.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/grainblue.jpg">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/header-background.4c35c324fbeb %281%29.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/header-background.4c35c324fbeb.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/iceCubesBackground.png">
+      <publishTime>05/26/2017 04:24:23</publishTime>
+    </File>
+    <File Include="Content/Imgaes/IOM_MFG.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/mdn-header-gradient.fdbe8fea0861.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/nav-back2.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/nav-backk3.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/network1b.jpg">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/online-shop.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/Paco_Logo_2.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/refricentroBackground.jpg">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/refricentroBackground2.jpg">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/Refricentro_Logo.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/Samsung-Logo.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/Tecumseh_Products_logo.svg.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/tgm.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/white texture.jpg">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/Imgaes/york.png">
+      <publishTime>05/26/2017 03:09:50</publishTime>
+    </File>
+    <File Include="Content/minCSS.css">
+      <publishTime>05/30/2017 01:03:47</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/26/2017 03:09:54</publishTime>
+    </File>
+    <File Include="dist/Login.min.js">
+      <publishTime>05/30/2017 14:04:25</publishTime>
+    </File>
+    <File Include="dist/UserAccount.min.js">
+      <publishTime>05/30/2017 14:04:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/26/2017 02:18:19</publishTime>
+    </File>
+    <File Include="gulpfile.js">
+      <publishTime>05/30/2017 14:03:49</publishTime>
+    </File>
+    <File Include="package.json">
+      <publishTime>05/30/2017 05:59:13</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/26/2017 02:38:06</publishTime>
+    </File>
+    <File Include="scripts/%40angular/common/bundles/common-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/common/bundles/common-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/common/bundles/common.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/common/bundles/common.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/compiler/bundles/compiler-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/compiler/bundles/compiler-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/compiler/bundles/compiler.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/compiler/bundles/compiler.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/core/bundles/core-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/core/bundles/core-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/core/bundles/core.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/core/bundles/core.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/forms/bundles/forms.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/forms/bundles/forms.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/http/bundles/http-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/http/bundles/http-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/http/bundles/http.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/http/bundles/http.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser-animations.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser-animations.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/platform-browser/bundles/platform-browser.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router-testing.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router-testing.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router-upgrade.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router-upgrade.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router.umd.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/%40angular/router/bundles/router.umd.min.js">
+      <publishTime>05/30/2017 05:46:03</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>05/26/2017 01:44:43</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>05/26/2017 01:44:43</publishTime>
+    </File>
+    <File Include="scripts/angular2.min.js">
+      <publishTime>05/30/2017 14:26:45</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.min.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/dataTables.semanticui.min.js">
+      <publishTime>05/26/2017 03:14:50</publishTime>
+    </File>
+    <File Include="scripts/daterangepicker.js">
+      <publishTime>05/26/2017 03:14:50</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.map">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/jquery.dataTables.js">
+      <publishTime>05/26/2017 03:14:50</publishTime>
+    </File>
+    <File Include="scripts/jquery.dataTables.min.js">
+      <publishTime>05/26/2017 03:14:50</publishTime>
+    </File>
+    <File Include="scripts/minJSLib.js">
+      <publishTime>05/30/2017 01:04:00</publishTime>
+    </File>
+    <File Include="scripts/modernizr-2.6.2.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/moment.min.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/semantic.min.js">
+      <publishTime>05/26/2017 03:14:54</publishTime>
+    </File>
+    <File Include="scripts/sha1.js">
+      <publishTime>05/27/2017 13:24:48</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-csp-production.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-csp-production.src.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-polyfills.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-polyfills.src.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-register-only.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system-register-only.src.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs-builder/node_modules/systemjs/dist/system.src.js">
+      <publishTime>05/30/2017 14:27:09</publishTime>
+    </File>
+    <File Include="scripts/systemjs.config.js">
+      <publishTime>05/30/2017 07:57:15</publishTime>
+    </File>
+    <File Include="src/Index/app.ts">
+      <publishTime>05/26/2017 02:44:25</publishTime>
+    </File>
+    <File Include="src/Index/boot.ts">
+      <publishTime>05/26/2017 02:44:25</publishTime>
+    </File>
+    <File Include="src/Index/main.ts">
+      <publishTime>05/26/2017 02:44:25</publishTime>
+    </File>
+    <File Include="src/Login/login-component.html">
+      <publishTime>05/29/2017 06:47:11</publishTime>
+    </File>
+    <File Include="src/Login/login-component.ts">
+      <publishTime>05/29/2017 13:05:50</publishTime>
+    </File>
+    <File Include="src/Login/login-module.ts">
+      <publishTime>05/26/2017 02:45:27</publishTime>
+    </File>
+    <File Include="src/Login/login-service.ts">
+      <publishTime>05/29/2017 12:38:04</publishTime>
+    </File>
+    <File Include="src/Login/main.ts">
+      <publishTime>05/30/2017 07:22:03</publishTime>
+    </File>
+    <File Include="src/Models/UderLoginDetails.ts">
+      <publishTime>05/29/2017 05:49:56</publishTime>
+    </File>
+    <File Include="src/UserAccount/main.ts">
+      <publishTime>05/26/2017 02:46:33</publishTime>
+    </File>
+    <File Include="src/UserAccount/user-account-component.html">
+      <publishTime>05/29/2017 13:02:40</publishTime>
+    </File>
+    <File Include="src/UserAccount/user-account-component.ts">
+      <publishTime>05/29/2017 12:28:50</publishTime>
+    </File>
+    <File Include="src/UserAccount/user-account-module.ts">
+      <publishTime>05/26/2017 02:46:33</publishTime>
+    </File>
+    <File Include="src/UserAccount/user-account-service.ts">
+      <publishTime>05/29/2017 12:37:57</publishTime>
+    </File>
+    <File Include="tsconfig.json">
+      <publishTime>05/26/2017 01:53:10</publishTime>
+    </File>
+    <File Include="typings.json">
+      <publishTime>05/26/2017 01:53:10</publishTime>
+    </File>
+    <File Include="Views/Login/ChangePassword.cshtml">
+      <publishTime>05/26/2017 03:15:39</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>05/26/2017 03:15:39</publishTime>
+    </File>
+    <File Include="Views/Login/Login.cshtml">
+      <publishTime>05/30/2017 14:25:20</publishTime>
+    </File>
+    <File Include="Views/Login/UserLogin1.cshtml">
+      <publishTime>05/26/2017 03:15:39</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/30/2017 06:17:29</publishTime>
+    </File>
+    <File Include="Views/UserAccount/UserAccount.cshtml">
+      <publishTime>05/26/2017 03:15:33</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/26/2017 03:15:35</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/26/2017 03:15:35</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/30/2017 14:27:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
